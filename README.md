@@ -23,7 +23,7 @@ public void onMapReady(GoogleMap googleMap) {
     thirdPartyTileProvider = new GMThirdPartyTileProvider(this, googleMap);
 }
 ```
-4. Initialize the settings you need
+3. Initialize the settings you need
 ```java
 final List<File> offlineMapsFileList = new ArrayList<>();
 //Map files can be found here: https://ftp-stud.hs-esslingen.de/pub/Mirrors/download.mapsforge.org/maps/v5
@@ -36,7 +36,7 @@ thirdPartyTileProvider.getSettings()
     .setOfflineMapFileList(offlineMapsFileList)
 ;
 ```
-5. Control the displayed map type from the tile provider object
+4. Control the displayed map type from the tile provider object
 ```java
 thirdPartyTileProvider.setMapType(GMThirdPartyTileProvider.ThirdPartyTileType.TILE_TYPE_OPEN_STREET_MAP);
 ```
